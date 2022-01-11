@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по навыку {{ skill_name }}</title>
+</head>
+<body>
+<h1>Найдено со скиллом {{ skill_name }}: {{ cans_count }}</h1>
+
+{% for can in cans %}
+<p><a href="/candidate/{{ can.id }}"> {{ can.name }}</a></p>
+{% endfor %}
+
+</body>
+</html>

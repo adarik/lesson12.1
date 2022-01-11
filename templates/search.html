@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>найдено кандидатов {{ cans_count }}</h1>
+
+{% for can in cans %}
+<p><a href="/candidate/{{ can.id }}"> {{ can.name }}</a></p>
+{% endfor %}
+</body>
+</html>
